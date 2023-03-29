@@ -47,6 +47,8 @@ body{
     line-height: 1.5;
 }
 
+
+
 .header{
     background: var(--bg);
     display: flex;
@@ -89,4 +91,380 @@ body{
 
 #menu-btn{
     display: none;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color:  var(--black);
+    text-transform: none;
+}
+
+.header .search-form label{
+    color: var(--black);
+    font-size: 2.2rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+
+.header .cart-items-container{ 
+    position: absolute;
+    top: 100%; right: -100%;
+    height: calc(
+        100vh - 9.5rem
+    );
+    width: 35rem;
+    background-color: #fff;
+    padding: 0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--bg);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+    width: 13rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.header .cart-items-container .cart-item .fa-xmark{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-item .fa-xmark:hover{
+    color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/coffeebackground.png) center center/cover no-repeat;
+}
+
+.home .content{
+    color: #fff;
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    color: #eee;
+    line-height: 1.8;
+
+}
+
+/* about section*/
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--black);
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem 5%;
+    color: #fff;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+} 
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* init menu */
+
+.menu{
+    padding: 2rem 7%;
+}
+
+.menu .box-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.menu .box-content .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+    transition: all .3s ease-in-out;
+}
+
+.menu .box-content .box img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu .box-content .box h3{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.menu .box-content .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-content .box span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    padding: .5rem 0;
+}
+
+.menu .box-content .box:hover{
+    background-color: #fff;
+}
+
+.menu .box-content .box:hover > *{
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    .header .navbar a{
+        margin: 0 .5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 5%;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh
+            - 9.5rem
+        );
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar.active.scrolled{
+        top: 9.5rem;
+    }
+
+    .header .navbar a{
+        display: block;
+        padding: 1.5rem 0;
+        margin: 1.5rem;
+        font-size: 2rem; 
+        color: var(--black);
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: right;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home{
+        background-position: -620px;
+    }
+
 }
