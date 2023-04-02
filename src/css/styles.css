@@ -455,7 +455,6 @@ section{
 
 .contact .row{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     background-color: var(--black);
@@ -463,8 +462,125 @@ section{
 
 .contact .row .map{
     flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem;
+}
+
+.contact .row form h3{
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    background-color: transparent;
+    color: #fff;
+    text-transform: none;
+
+}
+/* blog section */
+ 
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .image img:hover{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
     padding: 2rem;
 }
+
+.blogs .box-container .box .content .tittle{
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.blogs .box-container .box .content .tittle:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    font-size: 2rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+    display: block;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    
+}
+
+.footer .share a:hover{
+    color: var(--main-color);
+}
+
+.footer
 
 
 
