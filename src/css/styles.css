@@ -567,20 +567,68 @@ section{
     padding: 1rem 0;
 }
 
-.footer .share a{
-
+.footer .share a{       
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
 }
 
 .footer .share a:hover{
-    color: var(--main-color);
+    background-color: var(--main-color);
 }
 
-.footer
+.footer .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    border: var(--border);
+    color: #ccc;
+    padding: .7rem 2rem;
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.footer .box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem;
+    gap: 1rem;
+}
+
+.footer .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer .credit{
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #ccc;
+    font-weight: lighter ;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
 
 
 
